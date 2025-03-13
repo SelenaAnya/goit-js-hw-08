@@ -18,7 +18,7 @@ const images = [
   
   const gallery = document.querySelector('.gallery');
   
-  // Генерація розмітки
+
   const galleryMarkup = images
     .map(({ preview, original, description }) => `
       <li class="gallery-item">
@@ -36,7 +36,7 @@ const images = [
   
   gallery.innerHTML = galleryMarkup;
   
-  // Делегування подій
+
   gallery.addEventListener('click', onGalleryClick);
   
   function onGalleryClick(event) {
@@ -47,7 +47,7 @@ const images = [
   
     const largeImageURL = event.target.dataset.source;
   
-    // Ініціалізація модального вікна
+
     const instance = basicLightbox.create(`
       <img src="${largeImageURL}" alt="${event.target.alt}">
     `);
