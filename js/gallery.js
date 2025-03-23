@@ -73,7 +73,7 @@ const images = [
         <a class="gallery-link" href="${original}">
           <img
             class="gallery-image"
-            src="${preview}"
+            src="${preview}${preview}"
             data-source="${original}"
             alt="${description}"
           />
